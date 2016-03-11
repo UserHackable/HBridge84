@@ -4,7 +4,7 @@
 #define XINPUT 4
 #define YINPUT 5
 
-HBridge84 left(9,10,7), right(2,3,8);
+HBridge84 left(9,10,7), right(3,2,8);
 
 void setup() {
 
