@@ -49,8 +49,10 @@ public:
   }
   void setMode(byte);
   void coast();
+  void forward();
   void forward(byte);
-  void backward(byte);
+  void reverse();
+  void reverse(byte);
   void brake();
   void brake(byte);
   void drive(int);

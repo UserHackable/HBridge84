@@ -84,13 +84,25 @@ void HBridge84::coast() {
   clear_b();
 }
 
+void HBridge84::forward() {
+  set_a();
+  clear_b();
+  set_en();
+}
+
+void HBridge84::reverse() {
+  clear_a();
+  set_b();
+  set_en();
+}
+
 void HBridge84::forward(byte a) {
   set_a();
   clear_b();
   analogWrite(en_pin, a); // pulse enable last
 }
 
-void HBridge84::backward(byte a) {
+void HBridge84::reverse(byte a) {
   clear_a();
   set_b();
   analogWrite(en_pin, a); // pulse enable last
@@ -115,7 +127,7 @@ void HBridge84::drive(int a) {
     if (a > 10) forward(a); else coast();
   } else { // bottom half of range
     a = (255 - a);
-    if (a > 10) backward(a); else coast();
+    if (a > 10) reverse(a); else coast();
   }
 }
 

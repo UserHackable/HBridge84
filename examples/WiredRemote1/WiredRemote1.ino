@@ -1,10 +1,10 @@
 
+#include <HBridge84.h>
+
 #define XINPUT 5
 #define YINPUT 4
-#define LEFTA 9
-#define LEFTB 10
-#define LEFTEN 7
 
+HBridge84 left(9,10,7), right(3,2,8);
 
 void setup() {
   pinMode(LEFTA, OUTPUT);
@@ -13,16 +13,9 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(LEFTA, HIGH);
-  digitalWrite(LEFTEN, HIGH);
-  delay(1000);
-  digitalWrite(LEFTEN, LOW);
-  digitalWrite(LEFTA, LOW);
-  delay(1000);
-  digitalWrite(LEFTB, HIGH);
-  digitalWrite(LEFTEN, HIGH);
-  delay(1000);
-  digitalWrite(LEFTEN, LOW);
-  digitalWrite(LEFTB, LOW);
-  delay(1000);
+  left.forward(255); delay(500); left.coast();
+  right.forward(255); delay(500); right.coast();
+  left.reverse(255); delay(500); left.coast();
+  right.reverse(255); delay(500); right.coast();
+
 }

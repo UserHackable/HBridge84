@@ -1,35 +1,54 @@
 
+#include <HBridge84.h>
+
 #define XINPUT 5
 #define YINPUT 4
-#define LEFTA 9
-#define LEFTB 10
-#define LEFTEN 7
 
+HBridge84 left(9,10,7), right(3,2,8);
 
 void setup() {
-  pinMode(LEFTA, OUTPUT);
-  pinMode(LEFTB, OUTPUT);
-  pinMode(LEFTEN, OUTPUT);
 }
 
 int a;
 void loop() {
-  digitalWrite(LEFTA, HIGH);
-  for(a = 80; a < 255; ++a) {
-    analogWrite(LEFTEN, a);
+  for(a = 0; a < 255; ++a) {
+    left.forward(a);
     delay(10);
   }
-  for(; a > 80; --a) {
-    analogWrite(LEFTEN, a);
+  for(; a > 0; --a) {
+    left.forward(a);
     delay(10);
   }
-  digitalWrite(LEFTEN, LOW);
-  digitalWrite(LEFTA, LOW);
-  delay(1000);
-  digitalWrite(LEFTB, HIGH);
-  digitalWrite(LEFTEN, HIGH);
-  delay(1000);
-  digitalWrite(LEFTEN, LOW);
-  digitalWrite(LEFTB, LOW);
-  delay(1000);
+  left.coast();
+
+  for(a = 0; a < 255; ++a) {
+    right.forward(a);
+    delay(10);
+  }
+  for(; a > 0; --a) {
+    right.forward(a);
+    delay(10);
+  }
+  right.coast();
+
+  for(a = 0; a < 255; ++a) {
+    left.reverse(a);
+    delay(10);
+  }
+  for(; a > 0; --a) {
+    left.reverse(a);
+    delay(10);
+  }
+  left.coast();
+
+  for(a = 0; a < 255; ++a) {
+    right.reverse(a);
+    delay(10);
+  }
+  for(; a > 0; --a) {
+    right.reverse(a);
+    delay(10);
+  }
+  right.coast();
+
 }
