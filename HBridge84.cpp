@@ -1,6 +1,6 @@
 
-#include "HBridge84.h"
-#include "Arduino.h"
+#include <Arduino.h>
+#include <HBridge84.h>
 
 #ifndef cbi
 #define cbi(sfr, bit) (_SFR_BYTE(sfr) &= ~_BV(bit))

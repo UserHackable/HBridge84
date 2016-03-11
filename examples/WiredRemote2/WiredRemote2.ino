@@ -1,9 +1,6 @@
 
 #include <HBridge84.h>
 
-#define XINPUT 5
-#define YINPUT 4
-
 HBridge84 left(9,10,7), right(3,2,8);
 
 void setup() {
