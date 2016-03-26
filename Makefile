@@ -48,7 +48,6 @@ GERBER_DIR=gerbers
 all: $(zips) $(pngs) $(back_pngs)
 
 README.md: $(mds)
-	echo $^
 	cat $^ >> README.md 
 
 %.GTL: %.brd
@@ -105,10 +104,9 @@ clean:
 	rm -f *.zip *.GTL *.GBL *.GTO *.GTP *.GBO *.GTS *.GBS *.GML *.TXT *.gpi *.png *.dri
 
 %.md: %.png %_back.png %.GTL
-	echo "# $* \n\n" >>  $@
+	echo "## $* \n\n" >>  $@
 	gerber_board_size $*.GTL >> $@
-	echo "### Front\n\n ![Front]($^)\n\n" >>  $@
-	echo "### Back\n\n ![Back]($^)\n\n" >>  $@
+	echo "\n\n| Front | Back |\n| --- | --- |\n| ![Front]($*.png) | ![Back]($*_back.png) |\n\n" >>  $@
 
 .gitignore:
 	echo "\n*~\n.*.swp\n*.?#?\n.*.lck" > .gitignore
