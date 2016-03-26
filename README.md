@@ -53,12 +53,12 @@ It includes:
 
 ### Front
 
- ![Front](RJ11Breakout.png RJ11Breakout_back.png RJ11Breakout.GTL)
+ ![Front](RJ11Breakout.png)
 
 
 ### Back
 
- ![Back](RJ11Breakout.png RJ11Breakout_back.png RJ11Breakout.GTL)
+ ![Back](RJ11Breakout_back.png)
 
 
 # RJ11-ICSP-Breakout 
@@ -72,11 +72,11 @@ It includes:
 
 ### Front
 
- ![Front](RJ11-ICSP-Breakout.png RJ11-ICSP-Breakout_back.png RJ11-ICSP-Breakout.GTL)
+ ![Front](RJ11-ICSP-Breakout.png)
 
 
 ### Back
 
- ![Back](RJ11-ICSP-Breakout.png RJ11-ICSP-Breakout_back.png RJ11-ICSP-Breakout.GTL)
+ ![Back](RJ11-ICSP-Breakout_back.png)
 
 
