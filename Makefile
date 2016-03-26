@@ -45,7 +45,7 @@ mds := $(patsubst %.brd,%.md,$(boards))
 
 GERBER_DIR=gerbers
 
-all: $(zips) $(pngs) $(back_pngs)
+all: $(zips) $(pngs) $(back_pngs) README.md
 
 README.md: Intro.md $(mds)
 	cat $+ >> README.md 
@@ -104,7 +104,7 @@ clean:
 	rm -f *.zip *.GTL *.GBL *.GTO *.GTP *.GBO *.GTS *.GBS *.GML *.TXT *.gpi *.png *.dri
 
 %.md: %.png %_back.png %.GTL
-	echo "## $* \n\n" >>  $@
+	echo "## $* \n\n" >  $@
 	gerber_board_size $*.GTL >> $@
 	echo "\n\n| Front | Back |\n| --- | --- |\n| ![Front]($*.png) | ![Back]($*_back.png) |\n\n" >>  $@
 
