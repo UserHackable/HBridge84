@@ -32,15 +32,9 @@ It includes:
 * (2.0000, 1.3000) inches
 * (50.8000, 33.0200) mm
 
-### Front
-
- ![Front](HBridge84.png)
-
-
-### Back
-
- ![Back](HBridge84_back.png)
-
+|  Front  | Back |
+| --------------- | ------------- |
+| ![Front](HBridge84.png) | ![Back](HBridge84_back.png) |
 
 # RJ11Breakout 
 
