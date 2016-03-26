@@ -48,7 +48,7 @@ GERBER_DIR=gerbers
 all: $(zips) $(pngs) $(back_pngs) README.md
 
 README.md: Intro.md $(mds)
-	cat $+ >> README.md 
+	cat $+ > README.md 
 
 %.GTL: %.brd
 	eagle -X -d GERBER_RS274X -o $@ $< Top Pads Vias Dimension
