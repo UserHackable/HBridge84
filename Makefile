@@ -47,7 +47,7 @@ GERBER_DIR=gerbers
 
 all: $(zips) $(pngs) $(back_pngs)
 
-README.md: $(mds)
+README.md: Intro.md $(mds)
 	cat $^ >> README.md 
 
 %.GTL: %.brd
