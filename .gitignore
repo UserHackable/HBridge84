@@ -5,6 +5,7 @@
 *.pdf
 *.zip
 .*.swp
+.*.lck
 
 *.GBL
 *.GBO
