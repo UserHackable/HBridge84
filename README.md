@@ -34,12 +34,12 @@ It includes:
 
 ### Front
 
- ![Front](HBridge84.png HBridge84_back.png HBridge84.GTL)
+ ![Front](HBridge84.png)
 
 
 ### Back
 
- ![Back](HBridge84.png HBridge84_back.png HBridge84.GTL)
+ ![Back](HBridge84_back.png)
 
 
 # RJ11Breakout 
