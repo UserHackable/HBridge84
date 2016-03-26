@@ -3,9 +3,9 @@
 
 ### Board dimensions
 
-* (90625, 100000) original units
-* (0.9062, 1.0000) inches
-* (23.0187, 25.4000) mm
+* (90000, 100000) original units
+* (0.9000, 1.0000) inches
+* (22.8600, 25.4000) mm
 
 
 
