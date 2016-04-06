@@ -2,6 +2,7 @@
 /Images
 /Reference
 *.?#?
+*.pdf
 .*.swp
 .*.lck
 
