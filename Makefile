@@ -19,8 +19,9 @@ GERBV_OPTIONS= --export=png --dpi=$(GERBER_IMAGE_RESOLUTION) --background=$(BACK
 # # sudo ln -s /Applications/EAGLE/EAGLE.app/Contents/MacOS/EAGLE /usr/bin/eagle 
 
 boards := $(wildcard *.brd)
+drawings := $(wildcard *.dxf)
 zips := $(patsubst %.brd,%_gerber.zip,$(boards))
-pngs := $(patsubst %.brd,%.png,$(boards))
+pngs := $(patsubst %.brd,%.png,$(boards)) $(patsubst %.dxf,%.png,$(drawings))
 dris := $(patsubst %.brd,%.dri,$(boards))
 gpis := $(patsubst %.brd,%.gpi,$(boards))
 back_pngs := $(patsubst %.brd,%_back.png,$(boards))
@@ -85,6 +86,9 @@ README.md: Intro.md $(mds)
 %_gerber.zip: %.GTL %.GBL %.GTO %.GTP %.GBO %.GTS %.GBS %.GML %.TXT %.png %_back.png
 	zip $@ $^ $*.dri $*.gpi 
 	rm -f $*.dri $*.gpi
+
+%.png: %.dxf
+	dxf2png $@
 
 %.png: %.TXT %.GTO %.GTS %.GTL
 	gerbv $(GERBV_OPTIONS) --output=$@ \
