@@ -1,0 +1,90 @@
+** Drc report for RJ11Breakout.kicad_pcb **
+** Created on 2026-07-19T19:27:32 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 23 DRC violations **
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1926 mm)
+    Local override; error
+    @(7.3600 mm, -10.6363 mm): Track [2] on B.Cu, length 5.8163 mm
+    @(8.3800 mm, -8.0962 mm): PTH pad 3 [3] of U$7
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1926 mm)
+    Local override; error
+    @(9.4000 mm, -10.6363 mm): Track [4] on B.Cu, length 7.3362 mm
+    @(8.3800 mm, -8.0962 mm): PTH pad 3 [3] of U$7
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1926 mm)
+    Local override; error
+    @(11.4400 mm, -10.6363 mm): Track [6] on B.Cu, length 4.1375 mm
+    @(10.4200 mm, -8.0962 mm): PTH pad 5 [5] of U$7
+[text_thickness]: Text thickness out of range (board setup constraints silk text thickness min thickness 0.0800 mm; actual 0.0488 mm)
+    Rule: board setup constraints silk text thickness; warning
+    @(2.5400 mm, -0.6350 mm): PCB text 'RST' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5608 mm)
+    Rule: board setup constraints silk text height; warning
+    @(2.5400 mm, -0.6350 mm): PCB text 'RST' on F.Silkscreen
+[text_thickness]: Text thickness out of range (board setup constraints silk text thickness min thickness 0.0800 mm; actual 0.0488 mm)
+    Rule: board setup constraints silk text thickness; warning
+    @(10.1600 mm, -0.6350 mm): PCB text 'SCK' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5608 mm)
+    Rule: board setup constraints silk text height; warning
+    @(10.1600 mm, -0.6350 mm): PCB text 'SCK' on F.Silkscreen
+[text_thickness]: Text thickness out of range (board setup constraints silk text thickness min thickness 0.0800 mm; actual 0.0488 mm)
+    Rule: board setup constraints silk text thickness; warning
+    @(12.7000 mm, -0.6350 mm): PCB text 'MISO' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5608 mm)
+    Rule: board setup constraints silk text height; warning
+    @(12.7000 mm, -0.6350 mm): PCB text 'MISO' on F.Silkscreen
+[text_thickness]: Text thickness out of range (board setup constraints silk text thickness min thickness 0.0800 mm; actual 0.0488 mm)
+    Rule: board setup constraints silk text thickness; warning
+    @(15.2400 mm, -0.6350 mm): PCB text 'MOSI' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5608 mm)
+    Rule: board setup constraints silk text height; warning
+    @(15.2400 mm, -0.6350 mm): PCB text 'MOSI' on F.Silkscreen
+[text_thickness]: Text thickness out of range (board setup constraints silk text thickness min thickness 0.0800 mm; actual 0.0650 mm)
+    Rule: board setup constraints silk text thickness; warning
+    @(2.5400 mm, -4.4450 mm): PCB text '1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7478 mm)
+    Rule: board setup constraints silk text height; warning
+    @(2.5400 mm, -4.4450 mm): PCB text '1' on F.Silkscreen
+[text_thickness]: Text thickness out of range (board setup constraints silk text thickness min thickness 0.0800 mm; actual 0.0650 mm)
+    Rule: board setup constraints silk text thickness; warning
+    @(5.0800 mm, -4.4450 mm): PCB text '2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7478 mm)
+    Rule: board setup constraints silk text height; warning
+    @(5.0800 mm, -4.4450 mm): PCB text '2' on F.Silkscreen
+[text_thickness]: Text thickness out of range (board setup constraints silk text thickness min thickness 0.0800 mm; actual 0.0650 mm)
+    Rule: board setup constraints silk text thickness; warning
+    @(7.6200 mm, -4.4450 mm): PCB text '3' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7478 mm)
+    Rule: board setup constraints silk text height; warning
+    @(7.6200 mm, -4.4450 mm): PCB text '3' on F.Silkscreen
+[text_thickness]: Text thickness out of range (board setup constraints silk text thickness min thickness 0.0800 mm; actual 0.0650 mm)
+    Rule: board setup constraints silk text thickness; warning
+    @(10.0013 mm, -4.4450 mm): PCB text '4' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7478 mm)
+    Rule: board setup constraints silk text height; warning
+    @(10.0013 mm, -4.4450 mm): PCB text '4' on F.Silkscreen
+[text_thickness]: Text thickness out of range (board setup constraints silk text thickness min thickness 0.0800 mm; actual 0.0650 mm)
+    Rule: board setup constraints silk text thickness; warning
+    @(12.7000 mm, -4.4450 mm): PCB text '5' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7478 mm)
+    Rule: board setup constraints silk text height; warning
+    @(12.7000 mm, -4.4450 mm): PCB text '5' on F.Silkscreen
+[text_thickness]: Text thickness out of range (board setup constraints silk text thickness min thickness 0.0800 mm; actual 0.0650 mm)
+    Rule: board setup constraints silk text thickness; warning
+    @(15.2400 mm, -4.4450 mm): PCB text '6' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7478 mm)
+    Rule: board setup constraints silk text height; warning
+    @(15.2400 mm, -4.4450 mm): PCB text '6' on F.Silkscreen
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
